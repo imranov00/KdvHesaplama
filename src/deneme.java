@@ -3,7 +3,7 @@ import java.util.Scanner;
 
 public class deneme {
     public static void main(String[] args) {
-        int a,b,c,u,cevre ;
+        int a,b,c,u,cevre,t ;
         double d ;
 
 
@@ -15,16 +15,15 @@ public class deneme {
         System.out.println("3. Kenarı Giriniz:");
         c=girdi.nextInt();
 
-        u= (a+b+c)/2;
-        cevre=u*2;
-        d= Math.sqrt(u*(u-a)*(u-b)*(u-c)) ;
 
 
-        System.out.println("Üçgenin Çevresi: " +cevre);
+        u=(a+b+c)/2;
+        cevre= u*2;
+        d=Math.sqrt(u*(u-a)*(u-b)*(u-c));
 
-        System.out.println("Üçgenin Alanı:"  +d);
 
-
+        System.out.println("Üçgenin Çevresi: " + cevre);
+        System.out.println("Üçgenin alanı: " + d);
 
 
 
