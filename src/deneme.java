@@ -3,27 +3,21 @@ import java.util.Scanner;
 
 public class deneme {
     public static void main(String[] args) {
-        int a,b,c,u,cevre,t ;
-        double d ;
-
-
-        Scanner girdi = new Scanner(System.in);
-        System.out.println("1. Kenarı Giriniz:");
-        a= girdi.nextInt();
-        System.out.println("2. Kenarı Giriniz:");
-        b= girdi.nextInt();
-        System.out.println("3. Kenarı Giriniz:");
-        c=girdi.nextInt();
+        double kdvorani, tutar,kdvlifiyat,kdvtutarı;
+        Scanner input = new Scanner(System.in);
+        System.out.println("Tutar Giriniz:");
+        tutar = input.nextDouble();
 
 
 
-        u=(a+b+c)/2;
-        cevre= u*2;
-        d=Math.sqrt(u*(u-a)*(u-b)*(u-c));
 
+        kdvorani = (tutar >= 0 && tutar <= 1000) ? 0.18 : 0.8;
+        kdvtutarı= tutar*kdvorani;
+        kdvlifiyat= tutar+ kdvtutarı;
 
-        System.out.println("Üçgenin Çevresi: " + cevre);
-        System.out.println("Üçgenin alanı: " + d);
+        System.out.println("KDV Oranı: %" + kdvorani);
+        System.out.println("KDV Tutarı: " + kdvtutarı);
+        System.out.println("KDV'li Fiyat: " + kdvlifiyat) ;
 
 
 
