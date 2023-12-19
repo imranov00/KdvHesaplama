@@ -18,7 +18,9 @@ public class deneme {
         kdvlifiyat= tutar + kdvtutarı;
         System.out.println("Kdv Oranı:"+kdvorani);
 
-        System.out.println("KDV`li Fiyat:"+ kdvlifiyat);
+        System.out.println("KDV'siz tutar:"+ tutar);
+
+        System.out.println("KDV'li Fiyat:"+ kdvlifiyat);
 
         System.out.println("KDV Tutarı:" + kdvtutarı);
 
